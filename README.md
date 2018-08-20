@@ -1,4 +1,4 @@
-# Mill Test Reports (MTR) Information Extraction 
+# Mill Test Reports (MTRs) Information Extraction 
 
 The initial attempt at digitalizing MTRs database out of hard copies. 
 The ultimate goal is to build comprehensive digital databases out of different scanned forms, and to make materials qualtiy control & examination tasks easier and more efficient for engineers.
@@ -31,15 +31,14 @@ Generic:
 * The idea, simply, is to extract the essential content, i.e. chemical analysis, and later all useful contents from MTRs, and organize then into a structured database that can be deployed for multiple purposes.  
 * We are utilizing tesseract-OCR (optical character recognition), and then NLP(natural language processing) to build the preliminary database.
 * The raw data: scanned MTRs that come in all different formats
-![MTRsample1](MTRsample1.PNG) 
-![MTRsample2](MTRsample2.PNG)
+![MTRsample1](MTRsample1.PNG)  ![MTRsample2](MTRsample2.PNG)
 * The process: 
  1. Define the libraries for sub-vendor location extractions
  2. Split pdfs into single files and convert to text
  3. Based on converted text, fuzzy matching su-vendors. If top quality (class1), extract the content directly using pdf tools to text files, and move the files to top class folder; if not, crop the pdf based on the location information 
  4. Convert the cropped files to text files. Based on quality of content, decide whether to move it to 2nd quality folder or not (stays as the bottom qualty file)
  5. Add 'ID' field with the file name & page information, and 'class' field based on the folder where the file lies.
- 6. Parse all files from class 1 to a preliminary database: split, merge, and match columns, get rid of useless column and rows, transpose side-by-side contents, use regular expressions to double-check the content extracted is chemical analysis.
+ 6. Parse all files from class 1 to a preliminary database: split, merge, and match columns, get rid of useless column and rows, transpose side-by-side contents, use regular expressions to double-check that the content extracted is chemical analysis.
  7. Export the database to non-coder friendly .csv file
  
 
@@ -54,12 +53,12 @@ Generic:
 * PresentationSlides: all touchdown slides
 * Experiments: previous explorations, including IBM Watson test, test on old samples etc. that are not included in the final model
 * README: this file
-* README for non_coders: more detailed documentation in layman's language 
+* README for non_coders: more detailed documentation in a layman's language 
 
 
 ## To-dos
-* Orientation detection.
-* Class 2 database clean-up.
+* Orientation detection
+* Class 2 database clean-up
 * Ask for experts' inputs when the confidence about extracted content is low
 
 

@@ -32,8 +32,7 @@ Generic:
 * We are utilizing tesseract-OCR (optical character recognition), and then NLP(natural language processing) to build the preliminary database.
 * The raw data: scanned MTRs that come in all different format
 
-![MTRsample1](MTRsample1.PNG)  
-![MTRsample2](MTRsample2.PNG)
+![MTRsample](MTRsample2.PNG)
 
 * The process: 
  1. Define the libraries for sub-vendor location extractions

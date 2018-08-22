@@ -1,4 +1,4 @@
-# Mill Test Reports (MTRs) Information Extraction 
+# Mills Test Reports (MTRs) Information Extraction 
 
 The initial attempt at digitalizing MTRs database out of hard copies. 
 The ultimate goal is to build comprehensive digital databases out of different scanned forms, and to make materials qualtiy control & examination tasks easier and more efficient for engineers.
@@ -76,3 +76,5 @@ Generic:
 ## Authors
 * **Ginny Zhu** - *Initial work* - [github profile](https://github.com/chocolocked)
 * **Coded by Ginny, with love :)**
+
+--Due to privacy issues, actual content and data cannot be uploaded.
